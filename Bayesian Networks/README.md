@@ -56,28 +56,9 @@ Where:
 - `1` = Yes
 
 
-## Sample Input
+## Sample Input and Output
+![Output](Outputs.png)
 
-```text
-Do you have fever? (0/1): 1
-Do you have cough? (0/1): 1
-```
-
-
-## Sample Output
-
-```text
-Model Valid: True
-
-Probability of Disease:
-
-+------------+----------------+
-| Disease    |   phi(Disease) |
-+============+================+
-| Disease(0) |      0.65      |
-| Disease(1) |      0.35      |
-+------------+----------------+
-```
 
 
 ## Features

@@ -57,7 +57,7 @@ Where:
 
 
 ## Sample Input and Output
-![Output](Outputs.png)
+![Output](Output.png)
 
 
 

@@ -1,86 +1,20 @@
 ## Sample Test Cases
 
 ### Test Case 1: X Can Win Immediately
-
+![Test Case 1](Output_Screenshots/test_case1.png)
 
 ### Test Case 2: Forced Draw
+![Test Case 2](Output_Screenshots/test_case2.png)
 
-**Board**
-```text
-X O X
-X O O
-O X _
-```
 
-**Turn**
-```text
-X
-```
-
-**Expected Output**
-```text
-0
-```
-
----
 
 ### Test Case 3: Empty Board
-
-**Board**
-```text
-_ _ _
-_ _ _
-_ _ _
-```
-
-**Turn**
-```text
-X
-```
-
-**Expected Output**
-```text
-0
-```
-
----
+![Test Case 3](Output_Screenshots/test_case3.png)
 
 ### Test Case 4: X Already Won
+![Test Case 4](Output_Screenshots/test_case4.png)
 
-**Board**
-```text
-X X X
-O O _
-_ _ _
-```
-
-**Turn**
-```text
-O
-```
-
-**Expected Output**
-```text
-1
-```
-
----
 
 ### Test Case 5: O Already Won
+![Test Case 5](Output_Screenshots/test_case5.png)
 
-**Board**
-```text
-X X O
-X O _
-O _ _
-```
-
-**Turn**
-```text
-X
-```
-
-**Expected Output**
-```text
--1
-```

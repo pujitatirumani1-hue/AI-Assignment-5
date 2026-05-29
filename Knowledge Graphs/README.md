@@ -62,7 +62,7 @@ The project also generates static and interactive visualizations and calculates 
 
 After execution, the following files are generated inside the `results` folder:
 
-![Output](Output.png)
+![Output](Output_ss.png)
 
 
 ## How to Run

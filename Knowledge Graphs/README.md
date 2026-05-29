@@ -13,48 +13,81 @@ A **Knowledge Graph (KG)** is a structured representation of knowledge where ent
 
 # Knowledge Graph Using NetworkX
 
+# Academic Knowledge Graph
+
 ## Overview
 
-This project implements a simple Knowledge Graph in Python using NetworkX and Matplotlib. The program represents entities as nodes and relationships as directed edges, allowing visualization and exploration of connections between different concepts.
+This project demonstrates the creation and visualization of a simple Academic Knowledge Graph using Python. The graph represents relationships between students, skills, and domains using the NetworkX library.
+
+The project also generates static and interactive visualizations and calculates node importance using betweenness centrality.
 
 ## Features
 
-- Creates a directed knowledge graph.
-- Adds entities as nodes.
-- Adds relationships as labeled edges.
-- Displays relationships in the console.
-- Visualizes the graph with node and edge labels.
-- Uses NetworkX and Matplotlib for graph construction and visualization.
+- Creates a directed knowledge graph
+- Stores entities and relationships using Pandas DataFrames
+- Calculates betweenness centrality
+- Exports the graph in GraphML format
+- Generates a PNG visualization
+- Generates an interactive HTML visualization using PyVis
 
-## How It Works
+## Technologies Used
 
-The program creates a directed graph and adds entities as nodes. Relationships between entities are represented as edges with labels describing the connection.
+- Python
+- NetworkX
+- Pandas
+- Matplotlib
+- PyVis
 
-The graph contains:
+## Entities
 
-- Alice learns Python.
-- Python is used for Knowledge Graph.
+| Entity | Category |
+|---------|----------|
+| Emma | Student |
+| Liam | Student |
+| Python | Skill |
+| Machine Learning | Skill |
+| Data Science | Domain |
 
-The relationships are printed in the console and then displayed graphically using a spring layout.
+## Relationships
 
-## Output
+| Source | Relationship | Target |
+|---------|-------------|---------|
+| Emma | learns | Python |
+| Liam | studies | Machine Learning |
+| Python | used_in | Data Science |
+| Machine Learning | applied_to | Data Science |
+| Emma | collaborates_with | Liam |
 
-The program outputs the relationships between entities and displays a graphical visualization of the knowledge graph.
+## Output Files
 
-## Relationship Interpretation
+After execution, the following files are generated inside the `results` folder:
 
-| Relationship | Meaning |
-|--------------|---------|
-| learns | One entity learns another concept |
-| used_for | A concept is used for another purpose |
+- `academic_graph.graphml` – Graph data file
+- `academic_graph.png` – Static graph visualization
+- `academic_graph.html` – Interactive graph visualization
+
+## How to Run
+
+### 1. Install Required Libraries
+
+```bash
+pip install networkx matplotlib pandas pyvis
+```
+
+### 2. Run the Program
+
+```bash
+python academic_graph.py
+```
+
+### 3. View the Results
+
+Open the generated files from the `results` directory.
 
 ## Applications
 
-This implementation demonstrates fundamental concepts of:
-
 - Knowledge Representation
-- Knowledge Graph Construction
-- Graph-Based Data Modeling
-- Semantic Relationships
+- Educational Data Analysis
+- Relationship Mapping
+- Graph-Based Learning Systems
 - Artificial Intelligence
-- Data Visualization

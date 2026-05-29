@@ -62,9 +62,8 @@ The project also generates static and interactive visualizations and calculates 
 
 After execution, the following files are generated inside the `results` folder:
 
-- `academic_graph.graphml` – Graph data file
-- `academic_graph.png` – Static graph visualization
-- `academic_graph.html` – Interactive graph visualization
+![Output](Output.png)
+
 
 ## How to Run
 
